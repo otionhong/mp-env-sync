@@ -1,4 +1,4 @@
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional, Tuple
 from app.plugins import _PluginBase
 
 
@@ -27,3 +27,19 @@ class R50Sync(_PluginBase):
 
     def get_state(self) -> bool:
         return False
+
+    @staticmethod
+    def get_command() -> Optional[List[Dict[str, Any]]]:
+        pass
+
+    def get_api(self) -> List[Dict[str, Any]]:
+        pass
+
+    def get_form(self) -> Tuple[List[dict], Dict[str, Any]]:
+        pass
+
+    def get_page(self) -> List[List[dict]]:
+        pass
+
+    def stop_service(self) -> None:
+        pass
