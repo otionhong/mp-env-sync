@@ -33,13 +33,13 @@ class R50Sync(_PluginBase):
         pass
 
     def get_api(self) -> List[Dict[str, Any]]:
-        pass
+        return []
 
     def get_form(self) -> Tuple[List[dict], Dict[str, Any]]:
-        pass
+        return ([], {})
 
     def get_page(self) -> List[List[dict]]:
-        pass
+        return []
 
     def stop_service(self) -> None:
         pass
